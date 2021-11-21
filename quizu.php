@@ -20,10 +20,10 @@ if($_SERVER["REQUEST_METHOD"] === "GET") {
 <form action="" method="post">
     <p>Q.私の飼っていた犬の種類は？</p>
     <input type="text" name="q1" value="<?php echo $q1 ?>">
-    <?php if(in_array("q1", $wrongs)) { ?>
+    <?php if(in_array("a1", $wrongs)) { ?>
         <p>違います！！</p>
     <?php } ?>
-    <?php if(in_array("q1", $corrects)) { ?>
+    <?php if(in_array("a1", $corrects)) { ?>
         <p>正解！！</p>
     <?php } ?>
 
@@ -33,10 +33,10 @@ if($_SERVER["REQUEST_METHOD"] === "GET") {
     <input type="checkbox" name="q2[]" value="3">オーストラリア
     <input type="checkbox" name="q2[]" value="4">スウェーデン
     
-    <?php if(in_array("q2", $wrongs)) { ?>
+    <?php if(in_array("a2", $wrongs)) { ?>
         <p>違います！！</p>
     <?php } ?>
-    <?php if(in_array("q2", $corrects)) { ?>
+    <?php if(in_array("a2", $corrects)) { ?>
         <p>正解！！</p>
     <?php } ?>
     
